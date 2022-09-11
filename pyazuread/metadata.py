@@ -1,11 +1,3 @@
-"""**
- * @author [Suman Dey]
- * @email [sdey@surveymonkey.com]
- * @create date 2022-09-10 12:53:04
- * @modify date 2022-09-10 12:53:04
- * @desc [description]
- *"""
- 
 import requests
 from .utils import isBlank
 from .jwksutils import rsa_pem_from_jwk
