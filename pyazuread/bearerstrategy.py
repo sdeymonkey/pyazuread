@@ -84,7 +84,6 @@ class Baarerstrategy:
         pemKey = None
         if decoded == None:
             raise Exception("Invalid JWT token")
-        print(decoded)
         try:
             if 'x5t' in decoded:
                 pemKey = metadataCls.generateOidcPEM(decoded['x5t'])
@@ -93,7 +92,7 @@ class Baarerstrategy:
             else:
                 raise Exception("Invalid Azure JWT token.")
         except Exception as e:
-            raise Exception("Invalid Azure JWT token.")
+            raise Exception(str(e))
        
         return Jws(token, pemKey, metadata).verify()
         
