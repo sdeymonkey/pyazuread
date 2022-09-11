@@ -1,3 +1,4 @@
 requests==2.24.0
+pyopenssl==19.0.0
 cryptography==3.4.8
 PyJWT==1.7.1
