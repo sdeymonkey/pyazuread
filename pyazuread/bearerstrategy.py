@@ -84,7 +84,7 @@ class Baarerstrategy:
         pemKey = None
         if decoded == None:
             raise Exception("Invalid JWT token")
-        
+        print(decoded)
         try:
             if 'x5t' in decoded:
                 pemKey = metadataCls.generateOidcPEM(decoded['x5t'])
@@ -153,6 +153,10 @@ class Baarerstrategy:
                 raise Exception("token is not found")
             
             return self.jwtVerify(token, optionsToValidate, metadataCls)
+        
+        else:
+            raise Exception("token is not valid")
+        
         return {}
             
         

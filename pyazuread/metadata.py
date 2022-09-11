@@ -81,6 +81,8 @@ class Metadata:
         req = requests.get(url=jwksUri)
         if req.status_code == 200:
             oidc['keys'] = req.json()['keys']
+        else:
+            raise Exception("Keys not found")
         self.oidc = oidc            
         return {'oidc': oidc}
     
