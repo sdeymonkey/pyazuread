@@ -1,4 +1,8 @@
+asn1crypto==0.24.0
+cffi==1.11.5
+cryptography==2.3.1
+idna==2.7
+pycparser==2.19
+PyJWT==1.6.4
+six==1.11.0
 requests==2.24.0
-pyopenssl==19.0.0
-cryptography==3.4.8
-PyJWT==1.7.1
