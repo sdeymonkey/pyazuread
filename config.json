@@ -1,11 +1,11 @@
 {
     "credentials": {
-        "tenantID": "default",
-        "clientID": "default",
-        "audience": "default"
+        "tenantID": "",
+        "clientID": "",
+        "audience": ""
     },
     "resource": {
-        "scope": ["default"]
+        "scope": [""]
     },
     "metadata": {
         "authority": "login.microsoftonline.com",
